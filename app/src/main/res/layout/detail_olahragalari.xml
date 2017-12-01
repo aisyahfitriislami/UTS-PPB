@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#F0E2C5"
+    android:layout_height="match_parent"
+    tools:context="com.uts.ppb.uts_ppb.detail_olahragalari">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/atas"
+        android:layout_margin="20dp">
+        <TextView
+            android:id="@+id/text01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:text="Jenis olah raga yang dipilih :"/>
+        <TextView
+            android:id="@+id/text02"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:text="Lari"
+            android:layout_below="@+id/text01"/>
+        <TextView
+            android:id="@+id/text03"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:text="Waktu Olahraga (jam)"
+            android:layout_below="@+id/text02"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/atas2"
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/atas">
+
+        <Button
+            android:id="@+id/min"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="-"
+            android:textSize="20dp"/>
+
+        <Button
+            android:id="@+id/Nilai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="0"
+            android:textSize="20dp"/>
+
+        <Button
+            android:id="@+id/max"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="+"
+            android:textSize="20dp"/>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/atas2">
+        <Button
+            android:id="@+id/eksekusi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lakukan Olahraga" />
+
+    </RelativeLayout>
+</RelativeLayout>
